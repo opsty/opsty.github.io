@@ -1,11 +1,13 @@
 {
-  "name": "myblog",
+  "name": "ddlg-blog",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
     "astro": "astro"
   },
   "dependencies": {
@@ -14,5 +16,13 @@
     "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.17.1",
     "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.6.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

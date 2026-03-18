@@ -6,6 +6,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://opsty.github.io',
-	integrations: [mdx(), sitemap()],
+  site: 'https://opsty.github.io',
+  integrations: [mdx(), sitemap()],
 });
