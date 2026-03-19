@@ -1,32 +1,24 @@
 ---
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import Div_blog from '../../components/Div_blog.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 ---
 
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DDLG的博客</title>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
-    <p>
-      <nav>
-        <ul>
-          <li><a href="#">首页</a></li>
-          <li><a href="#">关于</a></li>
-          <li><a href="#">联系</a></li>
-        </ul>
-      </nav>
-    </p>
-    <main>
-      <section>
-        <h1>DDLG的博客</h1>
-        <p>欢迎来到我的博客，这里记录我的生活和学习</p>
-      </section>
-    </main>
+    <div class="searcher">
+      <Search_bar />
+    </div>
+    <div class="blog_browser">
+      <Div_blog />
+    </div>
     <footer>
       <p>Copyright © 2026 DDLG. All rights reserved.</p>
     </footer>
