@@ -38,7 +38,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background-image: url('../assets/knight.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                    url('../assets/knight.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
