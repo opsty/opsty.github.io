@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import Div_blog from '../../components/Div_blog.astro';
@@ -6,14 +7,7 @@ import Search_bar from '../../components/Search_bar.astro';
 import BaseHead from '../../components/BaseHead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-const post_blog = [
-  {
-    title: '模电基础',
-    url: '/blog/模电基础/',
-    excerpt:
-      '模电, 电路, 晶体管, 二极管, 场效应管, 运算放大器',
-  },
-];
+const Allblog = await getCollection('blog');
 ---
 
 <!doctype html>
@@ -28,8 +22,12 @@ const post_blog = [
     </div>
     <div class="blog_browser" id="blogContainer">
       {
-        post_blog.map((blog) => (
-          <Div_blog title={blog.title} url={blog.url} excerpt={blog.excerpt} />
+        Allblog.map((blog) => (
+          <Div_blog
+            title={blog.data.title}
+            url={`/blog/${blog.id}`}
+            excerpt={blog.data.description}
+          />
         ))
       }
     </div>
