@@ -1,0 +1,19 @@
+
+> ddlg-blog@0.0.1 build
+> astro build
+
+[2m01:39:28[22m [34m[content][39m Syncing content
+[InvalidContentEntryDataError] blog 鈫?ash data does not match collection schema.
+
+  description**: **description: Required
+  pubDate**: **pubDate: Invalid date
+
+  Hint:
+    See https://docs.astro.build/en/guides/content-collections/ for more information on content schemas.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/invalid-content-entry-data-error/
+  Location:
+    D:\codes\Myblog\src\content\blog\Ash.md:0:0
+  Stack trace:
+    at getEntryDataAndImages (file:///D:/codes/Myblog/node_modules/astro/dist/content/utils.js:168:26)
+    at async syncData (D:/codes/Myblog/node_modules/astro/dist/content/loaders/glob.js:97:28)
