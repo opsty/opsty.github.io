@@ -1,4 +1,5 @@
 ---
+import './components.css';
 interface Props {
   title: string;
   url: string;
@@ -8,7 +9,7 @@ interface Props {
 const { title, url, excerpt } = Astro.props;
 ---
 
-<a href={url} class="blogcard">
-  <p>{title}</p>
-  <p>{excerpt}</p>
+<a href={url} class="blog-card blog-card-item" data-title={title.toLowerCase()}>
+  <p class="title">{title}</p>
+  <p class="excerpt">{excerpt}</p>
 </a>
