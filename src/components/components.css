@@ -4,7 +4,7 @@
 
 .blog-card {
   display: block;
-  background: linear-gradient(to bottom, #ffffff, #f5a18d);
+  background: linear-gradient(to bottom, #ffffff, rgba(148, 225, 242, 0.7));
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(84, 124, 149, 0.1);
   padding: 20px;

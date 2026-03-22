@@ -1,6 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
-import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';  
+import Footer from '../../components/Footer.astro';  
 import Header from '../../components/Header.astro';
 import Div_blog from '../../components/Div_blog.astro';
 import Search_bar from '../../components/Search_bar.astro';
@@ -31,9 +31,7 @@ const Allblog = await getCollection('blog');
         ))
       }
     </div>
-    <footer>
-      <p>Copyright © 2026 DDLG. All rights reserved.</p>
-    </footer>
+    <Footer />
   </body><script>
     // 1. 获取搜索框和所有的博客卡片
     const searchInput = document.getElementById('searchInput');
